@@ -1,0 +1,156 @@
+main {
+    max-width: 1000px;
+    margin: 25px;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333333;
+    color: #ffffff;
+    width: 100%;
+}
+
+header h1 {
+    text-align: center;
+    font-size: larger;
+}
+
+.nav-box {
+    background-color: #004085;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+    justify-content: center; 
+    margin: 0;
+}
+
+.menu li {
+    flex: 1 1 auto;
+}
+
+.menu a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: 1;
+    font-size: large;
+    color: white;
+}
+
+.greenLine {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 1px solid #009440;
+    margin: 0 1rem;
+}
+
+img {
+    height: auto;
+    width: 100px;
+}
+
+.card .right-image {
+    padding-left: 10px;
+    float: right;
+}
+
+.card .left-image {
+    padding-right: 10px;
+    float: left;
+}
+
+.menu a:hover {
+    background-color: #0056b3;
+    border-radius: 4px;
+}
+
+.main-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    border: 1px solid #004085;
+    border-radius: 15px;
+}
+
+.card:nth-child(1) {
+    grid-column: 1/3;
+    margin-right: 1rem;
+}
+
+.card {
+    grid-column: 3/4;
+}
+
+.title {
+    background-color: #004085;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    border-radius: 12px 12px 0 0;
+    color: #ffffff;
+}
+
+.content {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.spacing {
+    padding: 15px;
+    font-size: small;
+}
+
+p {
+    margin: 0;
+}
+
+div {
+    grid-column: 1/2;
+}
+
+div h3 {
+    grid-column: 1/3;
+    margin: 10px;
+}
+
+.content {
+    grid-column: 2/3;
+}
+
+footer {
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: #333333;
+    color: white;
+    width: 100%;
+}
