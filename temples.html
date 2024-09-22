@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Amon Apolonio - Temple Album">
+    <meta name="author" content="Amon Apolonio Vieira">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <button id="mobile-menu" aria-label="Toggle Navigation Menu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="close-icon">X</span>
+    </button>
+    <header>
+        <h1>Temple Album</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Old</a></li>
+                <li><a href="">New</a></li>
+                <li><a href="">Large</a></li>
+                <li><a href="">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="home">
+        <h2>HOME</h2>
+    </div>
+    <main>
+        <div class="photos-list">
+            <figure>
+                <img src="images/campinas_temple.jpg" alt="Campinas Temple">
+                <figcaption>Campinas Temple</figcaption>
+            </figure>
+    
+            <figure>
+                <img src="images/sapporo_temple.jpg" alt="Sapporo Temple">
+                <figcaption>Sapporo Temple</figcaption>
+            </figure>
+    
+            <figure>
+                <img src="images/newport_beach_temple.jpg" alt="Newport Temple">
+                <figcaption>Newport Temple</figcaption>
+            </figure>
+    
+            <figure>
+                <img src="images/bangkok_temple.jpg" alt="Bangkok Temple">
+                <figcaption>Bangkok Temple</figcaption>
+            </figure>
+    
+            <figure>
+                <img src="images/hartford_temple.jpg" alt="Hartford Temple">
+                <figcaption>Hartford Temple</figcaption>
+            </figure>
+    
+            <figure>
+                <img src="images/rio_janeiro_temple.jpg" alt="Rio de Janeiro Temple">
+                <figcaption>Rio de Janeiro Temple</figcaption>
+            </figure>
+    
+            <figure>
+                <img src="images/san_diego_temple.jpg" alt="San Diego Temple">
+                <figcaption>San Diego Temple</figcaption>
+            </figure>
+    
+            <figure>
+                <img src="images/washington_temple.jpg" alt="Washington Temple">
+                <figcaption>Washington Temple</figcaption>
+            </figure>
+    
+            <figure>
+                <img src="images/salt_lake_temple.jpg" alt="Salt Lake Temple">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>©️ <span id="currentyear"></span> - Amon Apolonio, Brazil</p>
+        <p> Last Modified <span id="lastModified"></span> </p>
+    </footer>
+</body>
+</html>
