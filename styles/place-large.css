@@ -66,17 +66,16 @@
         right: 2rem;
         padding-top: 1rem;
         border-radius: 0.5rem;
+        width: 30%;
+        max-width: 300px;
     }
 
-    .weather .card-header {
-        width: 98%;
-        border-radius: 0.5rem;
-    }
-    
     .weather h2::after {
-        display: inline-block;
-        background-position: center;
-        height: 50px;
-        width: 50px;
+        content: '⛅';
+        display: inline;
+        background-image: none;
+        height: auto;
+        width: auto;
+        margin-left: 10px;
     }
 }

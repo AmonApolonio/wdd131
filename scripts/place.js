@@ -1,6 +1,6 @@
 let temp = 28;
 let windSpeed = 3.6;
-let weatherCondition = "Sunny";
+let weatherCondition = "Partly cloudy";
 
 const calculateWindChill = (t, s) => {
     //I will use celsius but I'll keep the Fahrenheit coefficients here too
