@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Amon Apolonio - My home country">
+    <meta name="author" content="Amon Apolonio Vieira">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+    <title>Brazil</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="images/brazil_flag.png" alt="Brazil Flag">
+            <h1>BRAZIL</h1>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/brazil_hero.webp" media="(min-width: 740px )">
+                <source srcset="images/brazil_hero_mobile.webp" media="(min-width: 500px )">
+                <img src="images/brazil_hero_mobile.webp" alt="Brazil" width="250" height="500">
+            </picture>
+        </div>
+        <section class="curiosities">
+            <div class="card-header">
+                <h2>Data:</h2>
+            </div>
+            <div class="curiositiesTable">
+                <div class="row">
+                    <div class="col key">Total Area:</div>
+                    <div class="col value">8.515.767 km²</div>
+                </div>
+                <div class="row">
+                    <div class="col key">Pop:</div>
+                    <div class="col value">214 million</div>
+                </div>
+                <div class="row">
+                    <div class="col key">Capital:</div>
+                    <div class="col value">Brasília</div>
+                </div>
+                <div class="row">
+                    <div class="col key">Lang:</div>
+                    <div class="col value">Portuguese</div>
+                </div>
+                <div class="row">
+                    <div class="col key">Currency:</div>
+                    <div class="col value">Real</div>
+                </div>
+                <div class="row">
+                    <div class="col key">Time Zone:</div>
+                    <div class="col value">UTC-5 to UTC-2</div>
+                </div>
+                <div class="row">
+                    <div class="col key">Call Code:</div>
+                    <div class="col value">+55</div>
+                </div>
+                <div class="row">
+                    <div class="col key">Internet TLD:</div>
+                    <div class="col value">.br</div>
+                </div>
+            </div>
+        </section>
+        <section class="weather">
+            <div class="card-header">
+                <h2>Weather:</h2>
+            </div>
+            <div class="curiositiesTable">
+                <div class="row">
+                    <div class="col key">Temperature:</div>
+                    <div class="col value" id="temp"></div>
+                </div>
+                <div class="row">
+                    <div class="col key">Conditions:</div>
+                    <div class="col value" id="cond"></div>
+                </div>
+                <div class="row">
+                    <div class="col key">Wind:</div>
+                    <div class="col value" id="wind"></div>
+                </div>
+                <div class="row">
+                    <div class="col key">Wind Chill:</div>
+                    <div class="col value" id="windChill"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©️ <span id="currentyear"></span> - Amon Apolonio, Brazil</p>
+        <p> Last Modified <span id="lastModified"></span> </p>
+    </footer>
+</body>
+</html>
