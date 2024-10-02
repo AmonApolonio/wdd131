@@ -30,11 +30,6 @@
         flex-direction: row;
     }
 
-
-    .navigation {
-        background-color: none;
-    }
-
     .navigation a {
         display: block;
         flex: 1 1 100%;
