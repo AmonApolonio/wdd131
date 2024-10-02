@@ -1,0 +1,153 @@
+:root{
+	--primary:  #358eb0;
+	--secundary: #004085;
+	--background-cards: rgb(240, 240, 240);
+	--border-color-cards: rgb(236, 236, 236);
+}
+
+* {
+	margin: 0;
+	padding: 3px;
+	box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+h1 {
+	text-align: left;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+}
+
+section h2 {
+	font-size: 1.5rem;
+	color: var(--primary);
+	margin: 1rem;
+	text-align: center;
+	
+}
+
+.res-grid section {
+    display: flex;
+    place-items: center;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+	margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--background-cards);
+    box-shadow: 4px 4px 10px;
+    overflow: hidden;
+}
+
+.res-grid img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.res-grid h3, .grid img {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.res-grid img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+ul {
+	max-width: 700px;
+	margin: 0rem auto;
+    justify-content: center;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	cursor: pointer;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+nav {
+    width: 100%;
+	background-color: var(--secundary);
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	color: #ffffff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+}
+.navigation a:hover {
+	background-color: #159fd6;
+	color: #ffffff; 
+	font-weight: 700;
+}
+
+.open a {
+	display: block;
+}
+
+.active::before {
+	content: "";
+}
+
+footer {
+	padding: 1.2rem;
+    background-color: var(--secundary);
+    color: white;
+    text-align: center;
+}
+
+.label {
+	color: var(--secundary);
+	font-weight: bold;
+}
+
+@media (min-width: 37.5em) {
+	h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+        
+	}
+
+	#menu {
+		display: none;
+	}
+
+	
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+}

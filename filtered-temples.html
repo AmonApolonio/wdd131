@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album - Responsive Navigation</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Amon Apolonio - Temple Album">
+    <meta name="author" content="Amon Apolonio Vieira">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temple-larges.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+            <nav>
+                <button id="menu"></button>
+                <ul class="navigation">
+                    <li><a id="home" class="active" href=#>Home</a></li>
+                    <li><a id="Old" href="#">Old</a></li>
+                    <li><a id="New" href="#">New</a></li>
+                    <li><a id="Large" href="#">Large</a></li>
+                    <li><a id="Small" href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Temples</h2>
+    </section>
+    <main>
+        <div class="res-grid"></div>
+    </main>
+    <footer>
+        <p>©️ <span id="currentyear"></span> - Amon Apolonio, Brazil</p>
+        <p> Last Modified <span id="lastModified"></span> </p>
+    </footer>
+</body>
+</html>
