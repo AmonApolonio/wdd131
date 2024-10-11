@@ -46,7 +46,7 @@ input[type='radio']:after {
     content: '';
     display: inline-block;
     visibility: visible;
-    border: 2px solid var(--accent2-color);
+    border: 2px solid;
 }
 
 input[type='radio']:checked:after {
