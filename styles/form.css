@@ -1,0 +1,105 @@
+body {
+    font-family: "Lato";
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2F2200;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+select, input[type="date"], textarea, input[type="text"] {
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: 0px;
+    left: -1px;
+    position: relative;
+    background-color: #ccc;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid var(--accent2-color);
+}
+
+input[type='radio']:checked:after {
+    background-color: #FFBE19;
+}
+
+input[type="checkbox"] {
+    width: 7%;
+}
+
+
+.rating > label{
+    display: inline-block;
+    margin: 10px 10px 0px -4px;
+}
+
+.features {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    text-align: left;
+}
+
+.features-item label{
+    margin: 0px;
+}
+
+.features-item {
+    display: flex;
+}
+
+button[type="submit"] {
+    background-color: #2F2200;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.review{
+    text-align: center;
+}
+
+footer {
+    background-color: #F7F3E7;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
