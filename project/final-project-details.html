@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Final Project - Amon Apolonio</title>
+    <meta name="author" content="Amon Apolonio">
+    <meta name="description" content="WDD 131- Dynamic Web Fundamentals - Amon Apolonio - Final Project">
+    <link rel="stylesheet" href="styles/final-project.css">
+    <link rel="stylesheet" href="styles/final-project-details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script type="module" src="scripts/final-project-details.js"></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/folklore_dive.png" alt="page logo" loading="lazy">
+        <nav>
+            <ul class="navigation">
+                <li><a id="home" class="active" href="final-project.html">Home</a></li>
+                <li><a id="details" href="#">Details</a></li>
+                <li><a id="favorites" href="final-project.html?view=favorites">Favorites</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="details-container" id="detailsContainer" style="display: none;">
+        <button class="arrow left" id="prevLegend">&lt;</button>
+        <div class="legend-content">
+            <img id="legendImage" src="images/empty-image-placeholder.jpg" 
+                alt="Legend Image" loading="lazy">
+            <div class="legend-info">
+                <h2 id="legendName">Legend</h2>
+                <p id="legendDetails"></p>
+            </div>
+        </div>
+        <button class="arrow right" id="nextLegend">&gt;</button>
+    </div>
+    <footer>
+        <p>©️ <span id="currentyear"></span> - Amon Apolonio, Brazil</p>
+        <p> Last Modified <span id="lastModified"></span> </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Final Project - Amon Apolonio</title>
+    <meta name="author" content="Amon Apolonio">
+    <meta name="description" content="WDD 131- Dynamic Web Fundamentals - Amon Apolonio - Final Project">
+    <link rel="stylesheet" href="styles/final-project.css">
+    <link rel="stylesheet" href="styles/final-project-home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="scripts/final-project.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/folklore_dive.png" alt="page logo" loading="lazy">
+        <nav>
+            <ul class="navigation">
+                <li><a id="home" class="active" href="final-project">Home</a></li>
+                <li><a id="details" href="final-project-details.html?id=1">Details</a></li>
+                <li><a id="favorites" href="#">Favorites</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <input type="text" id="searchBar" placeholder="Search Legends...">
+        <div class="res-grid"></div>
+        <div class="no-favorites-message"></div>
+    </main>
+    <footer>
+        <p>©️ <span id="currentyear"></span> - Amon Apolonio, Brazil</p>
+        <p> Last Modified <span id="lastModified"></span> </p>
+    </footer>
+</body>
+</html>
